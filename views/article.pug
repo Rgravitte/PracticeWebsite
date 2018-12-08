@@ -1,0 +1,8 @@
+extends layout
+
+block content
+
+  p= title
+  p= author
+  p= body
+  a.btn.btn-default(href='/articles/edit'+ article.id) Edit

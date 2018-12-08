@@ -1,0 +1,9 @@
+extends layout
+   
+block content
+  h1= staticTitle
+    each article, index in articles
+      ul.list-group 
+        li.list-group-item
+          a(href='article/' + article.id) #{article.title} 
+    
